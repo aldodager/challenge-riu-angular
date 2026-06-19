@@ -15,8 +15,8 @@
   --color-black: #000000;
   --color-red: #e4002b;
 
-  --page-max-width: 460px;
-  --content-max-width: 420px;
+  --page-max-width: 28.75rem; /* 460px */
+  --content-max-width: 26.25rem; /* 420px */
 
   --space-1: 0.5rem; /* 8px */
   --space-2: 0.625rem; /* 10px */
@@ -38,14 +38,14 @@
 
 html {
   width: 100%;
-  min-width: 320px;
+  min-width: 20rem;
   overflow-x: hidden;
   font-size: 100%;
 }
 
 body {
   width: 100%;
-  min-width: 320px;
+  min-width: 20rem;
   margin: 0;
   overflow-x: hidden;
   background: var(--color-page-bg);
