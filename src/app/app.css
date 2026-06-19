@@ -62,7 +62,6 @@
 /* First section */
 
 .hero-section {
-  min-height: 896.25px;
   background: var(--color-page-bg);
 }
 
@@ -72,7 +71,6 @@
   gap: var(--space-8);
   width: 100%;
   max-width: 100%;
-  min-height: 832.25px;
   padding: var(--space-8);
   overflow: hidden;
   border-radius: var(--radius-md);
