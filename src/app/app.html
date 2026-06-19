@@ -1,11 +1,16 @@
-<main class="mobile-page">
+<a class="skip-link" href="#main-content">
+  Saltar al contenido principal
+</a>
+
+<main class="mobile-page" id="main-content">
   <section class="section-frame hero-section" aria-labelledby="hero-title">
     <article class="hero-card">
       <figure class="image-placeholder hero-image">
         <img
           class="content-image"
           [src]="hero.imageSrc"
-          [alt]="hero.imageAlt"
+          [alt]="hero.altText"
+          fetchpriority="high"
         />
       </figure>
 
@@ -44,7 +49,12 @@
           Lorem ipsum dolor sit
         </h2>
 
-        <div class="search-row">
+        <form
+          class="search-row"
+          role="search"
+          aria-label="Buscar contenido"
+          (submit)="handleSearchSubmit($event)"
+        >
           <p class="search-copy">
             Lorem ipsum dolor sit
           </p>
@@ -54,22 +64,31 @@
           </label>
 
           <div class="search-field">
-            <img
-              class="search-icon"
-              src="assets/icons/search-icon.svg"
-              alt=""
-              aria-hidden="true"
-            />
+            <button class="search-submit" type="submit" aria-label="Enviar búsqueda">
+              <img
+                class="search-icon"
+                src="assets/icons/search-icon.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </button>
 
             <input
               class="search-input"
               id="search"
-              type="text"
-              role="searchbox"
+              name="search"
+              type="search"
               aria-label="Buscar contenido"
+              autocomplete="off"
             />
           </div>
-        </div>
+
+          <p class="sr-only" aria-live="polite">
+            @if (submittedSearch) {
+              Búsqueda enviada: {{ submittedSearch }}
+            }
+          </p>
+        </form>
       </div>
 
       <div class="article-list">
@@ -79,7 +98,9 @@
               <img
                 class="content-image"
                 [src]="article.imageSrc"
-                [alt]="article.imageAlt"
+                [alt]="article.altText"
+                loading="lazy"
+                decoding="async"
               />
             </figure>
 
@@ -126,7 +147,9 @@
                 <img
                   class="content-image"
                   [src]="item.imageSrc"
-                  [alt]="item.imageAlt"
+                  [alt]="item.altText"
+                  loading="lazy"
+                  decoding="async"
                 />
               </figure>
 
@@ -140,7 +163,11 @@
                     {{ item.description }}
                   </p>
 
-                  <a class="carousel-link" href="#" [attr.aria-label]="'Ver más sobre ' + item.title">
+                  <a
+                    class="carousel-link"
+                    [href]="item.linkUrl"
+                    [attr.aria-label]="'Ver más sobre ' + item.title"
+                  >
                     <span>{{ item.linkLabel }}</span>
                     <img
                       class="carousel-link-icon"

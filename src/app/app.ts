@@ -6,7 +6,7 @@ type ContentCard = {
   title: string;
   description: string;
   imageSrc: string;
-  imageAlt: string;
+  altText: string;
   desktopOnly?: boolean;
 };
 
@@ -15,8 +15,9 @@ type CarouselItem = {
   title: string;
   description: string;
   linkLabel: string;
+  linkUrl: string;
   imageSrc: string;
-  imageAlt: string;
+  altText: string;
 };
 
 @Component({
@@ -26,13 +27,15 @@ type CarouselItem = {
   styleUrl: './app.css'
 })
 export class App {
+  protected submittedSearch = '';
+
   readonly hero = {
     date: 'Lorem ipsum dolor sit amet.',
     title: 'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.',
     imageSrc: 'assets/images/placeholder-image.svg',
-    imageAlt: 'Imagen principal del contenido'
+    altText: 'Contenido principal destacado'
   };
 
   readonly articles: ContentCard[] = [
@@ -43,7 +46,7 @@ export class App {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.',
       imageSrc: 'assets/images/placeholder-image.svg',
-      imageAlt: 'Imagen relacionada al artículo'
+      altText: 'Contenido relacionado con el artículo'
     },
     {
       id: 2,
@@ -52,7 +55,7 @@ export class App {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.',
       imageSrc: 'assets/images/placeholder-image.svg',
-      imageAlt: 'Imagen relacionada al artículo'
+      altText: 'Contenido relacionado con el artículo'
     },
     {
       id: 3,
@@ -61,7 +64,7 @@ export class App {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.',
       imageSrc: 'assets/images/placeholder-image.svg',
-      imageAlt: 'Imagen relacionada al artículo'
+      altText: 'Contenido relacionado con el artículo'
     },
     {
       id: 4,
@@ -70,7 +73,7 @@ export class App {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.',
       imageSrc: 'assets/images/placeholder-image.svg',
-      imageAlt: 'Imagen relacionada al artículo'
+      altText: 'Contenido relacionado con el artículo'
     },
     {
       id: 5,
@@ -79,7 +82,7 @@ export class App {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.',
       imageSrc: 'assets/images/placeholder-image.svg',
-      imageAlt: 'Imagen relacionada al artículo',
+      altText: 'Contenido relacionado con el artículo',
       desktopOnly: true
     },
     {
@@ -89,7 +92,7 @@ export class App {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.',
       imageSrc: 'assets/images/placeholder-image.svg',
-      imageAlt: 'Imagen relacionada al artículo',
+      altText: 'Contenido relacionado con el artículo',
       desktopOnly: true
     }
   ];
@@ -100,32 +103,36 @@ export class App {
       title: 'Lorem ipsum',
       description: 'Lorem ipsum dolor sit amet consectetur.',
       linkLabel: 'Lorem ipsum',
+      linkUrl: '#carousel-section-title',
       imageSrc: 'assets/images/placeholder-image.svg',
-      imageAlt: 'Imagen destacada'
+      altText: 'Contenido destacado del carrusel'
     },
     {
       id: 2,
       title: 'Lorem ipsum',
       description: 'Lorem ipsum dolor sit amet consectetur.',
       linkLabel: 'Lorem ipsum',
+      linkUrl: '#carousel-section-title',
       imageSrc: 'assets/images/placeholder-image.svg',
-      imageAlt: 'Imagen destacada'
+      altText: 'Contenido destacado del carrusel'
     },
     {
       id: 3,
       title: 'Lorem ipsum',
       description: 'Lorem ipsum dolor sit amet consectetur.',
       linkLabel: 'Lorem ipsum',
+      linkUrl: '#carousel-section-title',
       imageSrc: 'assets/images/placeholder-image.svg',
-      imageAlt: 'Imagen destacada'
+      altText: 'Contenido destacado del carrusel'
     },
     {
       id: 4,
       title: 'Lorem ipsum',
       description: 'Lorem ipsum dolor sit amet consectetur.',
       linkLabel: 'Lorem ipsum',
+      linkUrl: '#carousel-section-title',
       imageSrc: 'assets/images/placeholder-image.svg',
-      imageAlt: 'Imagen destacada'
+      altText: 'Contenido destacado del carrusel'
     }
   ];
 
@@ -134,4 +141,16 @@ export class App {
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.'
   };
+
+  protected handleSearchSubmit(event: SubmitEvent): void {
+    event.preventDefault();
+
+    const form = event.currentTarget as HTMLFormElement;
+    const searchControl = form.elements.namedItem('search');
+
+    if (searchControl instanceof HTMLInputElement) {
+      this.submittedSearch = searchControl.value.trim();
+      searchControl.blur();
+    }
+  }
 }
