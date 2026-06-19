@@ -3,9 +3,33 @@
 @import "@fontsource/inter/600.css";
 @import "@fontsource/inter/700.css";
 @import "@fontsource/inter/800.css";
+@import "@fontsource/figtree/700.css";
 @import "tailwindcss";
 
-/* Base general del proyecto */
+:root {
+  --color-page-bg: #f4f4f5;
+  --color-white: #ffffff;
+  --color-placeholder: #bdbdbd;
+  --color-placeholder-text: #a6a2a2;
+  --color-text-dark: #343a40;
+  --color-black: #000000;
+  --color-red: #e4002b;
+
+  --page-max-width: 460px;
+  --content-max-width: 420px;
+
+  --space-1: 0.5rem; /* 8px */
+  --space-2: 0.625rem; /* 10px */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem; /* 16px */
+  --space-5: 1.25rem; /* 20px */
+  --space-6: 1.5rem; /* 24px */
+  --space-8: 2rem; /* 32px */
+  --space-12: 3rem; /* 48px */
+
+  --radius-md: 0.5rem; /* 8px */
+}
+
 *,
 *::before,
 *::after {
@@ -13,19 +37,36 @@
 }
 
 html {
-  font-size: 16px;
+  width: 100%;
+  min-width: 320px;
+  overflow-x: hidden;
+  font-size: 100%;
+}
+
+body {
+  width: 100%;
+  min-width: 320px;
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--color-page-bg);
+  color: var(--color-black);
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+app-root {
+  display: block;
   width: 100%;
   overflow-x: hidden;
 }
 
-body {
-  margin: 0;
-  width: 100%;
-  min-width: 320px;
-  overflow-x: hidden;
-  background: #f4f4f5;
-  font-family: "Inter", Arial, Helvetica, sans-serif;
-  color: #101010;
+button,
+input {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
 }
 
 img {
@@ -33,16 +74,23 @@ img {
   max-width: 100%;
 }
 
-/* Limpia controles visuales nativos del input search en Safari/Chrome */
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-  appearance: none;
-  display: none;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-/* Oculta visualmente el scrollbar horizontal del carrusel sin quitar el scroll */
+.sr-only {
+  position: absolute;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  padding: 0;
+  margin: -0.0625rem;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+}
+
 .scrollbar-hidden {
   scrollbar-width: none;
 }

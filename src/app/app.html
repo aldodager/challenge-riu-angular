@@ -1,31 +1,26 @@
-<main class="min-h-screen w-full overflow-x-hidden bg-[#F4F4F5]">
-  <!-- Contenedor mobile: frame de 460px, con 20px laterales para dejar el card en 420px -->
-  <div class="mx-auto w-full max-w-[460px] overflow-hidden bg-[#F4F4F5] px-[20px] py-[32px]">
-    <section class="flex min-h-[832.25px] w-full flex-col gap-[32px] rounded-[8px] bg-white p-[32px] shadow-[0_2px_0_0_rgba(0,0,0,0.2)]">
-      <figure class="h-[198px] w-full overflow-hidden rounded-[8px] bg-[#BDBDBD]">
-        <img
-          src="assets/images/placeholder-image.svg"
-          alt="Imagen principal del contenido"
-          class="h-full w-full object-cover"
-        />
+<main class="mobile-page">
+  <section class="section-frame hero-section" aria-labelledby="hero-title">
+    <article class="hero-card">
+      <figure class="image-placeholder hero-image" role="img" aria-label="Imagen principal del contenido">
+        <span aria-hidden="true">IMAGE</span>
       </figure>
 
-      <div>
-        <div class="flex items-center gap-[8px] text-[16px] font-bold leading-[24px] text-[#343A40]">
+      <div class="hero-content">
+        <div class="meta-row">
           <img
+            class="meta-icon"
             src="assets/icons/calendar-icon.svg"
             alt=""
             aria-hidden="true"
-            class="h-[24px] w-[24px] shrink-0"
           />
           <span>Lorem ipsum dolor sit amet.</span>
         </div>
 
-        <h1 class="mt-[16px] text-[24px] font-bold leading-[28px] text-[#343A40]">
+        <h1 class="hero-title" id="hero-title">
           Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit
         </h1>
 
-        <p class="mt-[16px] text-[16px] font-normal leading-[24px] text-[#343A40]">
+        <p class="hero-description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.
           Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.
           Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.
@@ -33,319 +28,260 @@
           Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.
         </p>
 
-        <div class="mt-[16px] flex justify-end">
-          <button
-            class="flex h-[40px] w-[122px] items-center justify-center gap-[10px] whitespace-nowrap rounded-[8px] bg-[#E4002B] px-[8px] text-[16px] font-bold leading-[24px] text-white"
-            type="button"
-          >
+        <div class="hero-action-row">
+          <button class="primary-button" type="button">
             Lorem ipsum.
           </button>
         </div>
       </div>
-    </section>
+    </article>
+  </section>
 
-    <section class="mt-[32px]">
-      <h2 class="text-[30px] font-bold leading-[32px] text-black">
-        Lorem ipsum dolor sit
-      </h2>
+  <section class="section-frame content-section" aria-labelledby="content-title">
+    <div class="content-container">
+      <div class="search-block">
+        <h2 class="search-title" id="content-title">
+          Lorem ipsum dolor sit
+        </h2>
 
-      <p class="mt-[24px] text-[18px] font-normal leading-[27px] text-black">
-        Lorem ipsum dolor sit
-      </p>
+        <div>
+          <p class="search-copy">
+            Lorem ipsum dolor sit
+          </p>
 
-      <label class="sr-only" for="search">Buscar contenido</label>
-      <div class="mt-[14px] flex h-[40px] w-full items-center rounded-[8px] bg-white px-[14px]">
-        <img
-          src="assets/icons/search-icon.svg"
-          alt=""
-          aria-hidden="true"
-          class="h-[13px] w-[13px] shrink-0"
-        />
+          <label class="sr-only" for="search">
+            Buscar contenido
+          </label>
 
-        <input
-          id="search"
-          class="h-full w-full min-w-0 appearance-none bg-transparent pl-[8px] text-[16px] leading-[24px] outline-none"
-          type="text"
-          role="searchbox"
-          aria-label="Buscar contenido"
-        />
+          <div class="search-field">
+            <img
+              class="search-icon"
+              src="assets/icons/search-icon.svg"
+              alt=""
+              aria-hidden="true"
+            />
+
+            <input
+              class="search-input"
+              id="search"
+              type="text"
+              role="searchbox"
+              aria-label="Buscar contenido"
+            />
+          </div>
+        </div>
       </div>
-    </section>
 
-    <section class="mt-[48px] space-y-[40px]">
-      <!-- Listado mobile: cada bloque queda listo para recibir contenido dinámico -->
-      <article>
-        <figure class="h-[232px] w-full overflow-hidden rounded-[8px] bg-[#BDBDBD]">
-          <img
-            src="assets/images/placeholder-image.svg"
-            alt="Imagen relacionada al artículo"
-            class="h-full w-full object-cover"
-          />
-        </figure>
+      <div class="article-list">
+        <article class="article-card">
+          <figure class="image-placeholder article-image" role="img" aria-label="Imagen relacionada al artículo">
+            <span aria-hidden="true">IMAGE</span>
+          </figure>
 
-        <div class="mt-[14px] flex items-center gap-[8px] text-[16px] font-bold leading-[24px] text-[#343A40]">
-          <img
-            src="assets/icons/calendar-icon.svg"
-            alt=""
-            aria-hidden="true"
-            class="h-[24px] w-[24px] shrink-0"
-          />
-          <span>Lorem ipsum dolor sit amet.</span>
-        </div>
-
-        <h3 class="mt-[8px] text-[24px] font-bold leading-[28px] text-[#343A40]">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.
-        </h3>
-
-        <p class="mt-[16px] text-[16px] font-normal leading-[24px] text-[#343A40]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
-          Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur,
-          ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
-          Vestibulum auctor ornare leo, non suscipit magna interdum eu.
-        </p>
-      </article>
-
-      <article>
-        <figure class="h-[232px] w-full overflow-hidden rounded-[8px] bg-[#BDBDBD]">
-          <img
-            src="assets/images/placeholder-image.svg"
-            alt="Imagen relacionada al artículo"
-            class="h-full w-full object-cover"
-          />
-        </figure>
-
-        <div class="mt-[14px] flex items-center gap-[8px] text-[16px] font-bold leading-[24px] text-[#343A40]">
-          <img
-            src="assets/icons/calendar-icon.svg"
-            alt=""
-            aria-hidden="true"
-            class="h-[24px] w-[24px] shrink-0"
-          />
-          <span>Lorem ipsum dolor sit amet.</span>
-        </div>
-
-        <h3 class="mt-[8px] text-[24px] font-bold leading-[28px] text-[#343A40]">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.
-        </h3>
-
-        <p class="mt-[16px] text-[16px] font-normal leading-[24px] text-[#343A40]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
-          Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur,
-          ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
-          Vestibulum auctor ornare leo, non suscipit magna interdum eu.
-        </p>
-      </article>
-
-      <article>
-        <figure class="h-[232px] w-full overflow-hidden rounded-[8px] bg-[#BDBDBD]">
-          <img
-            src="assets/images/placeholder-image.svg"
-            alt="Imagen relacionada al artículo"
-            class="h-full w-full object-cover"
-          />
-        </figure>
-
-        <div class="mt-[14px] flex items-center gap-[8px] text-[16px] font-bold leading-[24px] text-[#343A40]">
-          <img
-            src="assets/icons/calendar-icon.svg"
-            alt=""
-            aria-hidden="true"
-            class="h-[24px] w-[24px] shrink-0"
-          />
-          <span>Lorem ipsum dolor sit amet.</span>
-        </div>
-
-        <h3 class="mt-[8px] text-[24px] font-bold leading-[28px] text-[#343A40]">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.
-        </h3>
-
-        <p class="mt-[16px] text-[16px] font-normal leading-[24px] text-[#343A40]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
-          Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur,
-          ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
-          Vestibulum auctor ornare leo, non suscipit magna interdum eu.
-        </p>
-      </article>
-
-      <article>
-        <figure class="h-[232px] w-full overflow-hidden rounded-[8px] bg-[#BDBDBD]">
-          <img
-            src="assets/images/placeholder-image.svg"
-            alt="Imagen relacionada al artículo"
-            class="h-full w-full object-cover"
-          />
-        </figure>
-
-        <div class="mt-[14px] flex items-center gap-[8px] text-[16px] font-bold leading-[24px] text-[#343A40]">
-          <img
-            src="assets/icons/calendar-icon.svg"
-            alt=""
-            aria-hidden="true"
-            class="h-[24px] w-[24px] shrink-0"
-          />
-          <span>Lorem ipsum dolor sit amet.</span>
-        </div>
-
-        <h3 class="mt-[8px] text-[24px] font-bold leading-[28px] text-[#343A40]">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.
-        </h3>
-
-        <p class="mt-[16px] text-[16px] font-normal leading-[24px] text-[#343A40]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
-          Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur,
-          ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
-          Vestibulum auctor ornare leo, non suscipit magna interdum eu.
-        </p>
-      </article>
-    </section>
-
-    <section class="mt-[56px]">
-      <h2 class="text-[30px] font-bold leading-[32px] text-black">
-        Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.
-      </h2>
-
-      <p class="mt-[24px] text-[16px] font-normal leading-[24px] text-[#343A40]">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
-        Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur,
-        ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
-        Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh,
-        at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales.
-        Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros,
-        eget tempus orci facilisis id.
-      </p>
-    </section>
-
-    <section class="mt-[48px] -mr-[20px] overflow-hidden">
-      <!-- Carrusel visual: las imágenes quedan listas para ser reemplazadas por CMS -->
-      <div class="scrollbar-hidden flex gap-[32px] overflow-x-auto pb-[8px] pr-[20px]">
-        <article class="relative h-[378px] min-w-[284px] overflow-hidden rounded-[8px] bg-[#BDBDBD]">
-          <img
-            src="assets/images/placeholder-image.svg"
-            alt="Imagen destacada"
-            class="h-full w-full object-cover"
-          />
-
-          <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent px-[16px] pb-[18px] pt-[120px] text-white">
-            <h3 class="text-[30px] font-bold leading-[38px] text-white">
-              Lorem ipsum
-            </h3>
-
-            <p class="mt-[8px] text-[16px] font-normal leading-[24px] text-white">
-              Lorem ipsum dolor sit amet consectetur.
-            </p>
-
-            <a
-              class="mt-[14px] inline-flex items-center gap-[4px] text-[16px] font-bold leading-[24px] text-white"
-              href="#"
-              aria-label="Ver más sobre Lorem ipsum"
-            >
-              <span>Lorem ipsum</span>
-              <img
-                src="assets/icons/download-icon.svg"
-                alt=""
-                aria-hidden="true"
-                class="h-[24px] w-[24px] shrink-0"
-              />
-            </a>
+          <div class="meta-row">
+            <img
+              class="meta-icon"
+              src="assets/icons/calendar-icon.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <span>Lorem ipsum dolor sit amet.</span>
           </div>
+
+          <h3 class="article-title">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.
+          </h3>
+
+          <p class="article-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
+            Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur,
+            ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
+            Vestibulum auctor ornare leo, non suscipit magna interdum eu.
+          </p>
         </article>
 
-        <article class="relative h-[378px] min-w-[284px] overflow-hidden rounded-[8px] bg-[#BDBDBD]">
-          <img
-            src="assets/images/placeholder-image.svg"
-            alt="Imagen destacada"
-            class="h-full w-full object-cover"
-          />
+        <article class="article-card">
+          <figure class="image-placeholder article-image" role="img" aria-label="Imagen relacionada al artículo">
+            <span aria-hidden="true">IMAGE</span>
+          </figure>
 
-          <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent px-[16px] pb-[18px] pt-[120px] text-white">
-            <h3 class="text-[30px] font-bold leading-[38px] text-white">
-              Lorem ipsum
-            </h3>
-
-            <p class="mt-[8px] text-[16px] font-normal leading-[24px] text-white">
-              Lorem ipsum dolor sit amet consectetur.
-            </p>
-
-            <a
-              class="mt-[14px] inline-flex items-center gap-[4px] text-[16px] font-bold leading-[24px] text-white"
-              href="#"
-              aria-label="Ver más sobre Lorem ipsum"
-            >
-              <span>Lorem ipsum</span>
-              <img
-                src="assets/icons/download-icon.svg"
-                alt=""
-                aria-hidden="true"
-                class="h-[24px] w-[24px] shrink-0"
-              />
-            </a>
+          <div class="meta-row">
+            <img
+              class="meta-icon"
+              src="assets/icons/calendar-icon.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <span>Lorem ipsum dolor sit amet.</span>
           </div>
+
+          <h3 class="article-title">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.
+          </h3>
+
+          <p class="article-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
+            Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur,
+            ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
+            Vestibulum auctor ornare leo, non suscipit magna interdum eu.
+          </p>
         </article>
 
-        <article class="relative h-[378px] min-w-[284px] overflow-hidden rounded-[8px] bg-[#BDBDBD]">
-          <img
-            src="assets/images/placeholder-image.svg"
-            alt="Imagen destacada"
-            class="h-full w-full object-cover"
-          />
+        <article class="article-card">
+          <figure class="image-placeholder article-image" role="img" aria-label="Imagen relacionada al artículo">
+            <span aria-hidden="true">IMAGE</span>
+          </figure>
 
-          <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent px-[16px] pb-[18px] pt-[120px] text-white">
-            <h3 class="text-[30px] font-bold leading-[38px] text-white">
-              Lorem ipsum
-            </h3>
-
-            <p class="mt-[8px] text-[16px] font-normal leading-[24px] text-white">
-              Lorem ipsum dolor sit amet consectetur.
-            </p>
-
-            <a
-              class="mt-[14px] inline-flex items-center gap-[4px] text-[16px] font-bold leading-[24px] text-white"
-              href="#"
-              aria-label="Ver más sobre Lorem ipsum"
-            >
-              <span>Lorem ipsum</span>
-              <img
-                src="assets/icons/download-icon.svg"
-                alt=""
-                aria-hidden="true"
-                class="h-[24px] w-[24px] shrink-0"
-              />
-            </a>
+          <div class="meta-row">
+            <img
+              class="meta-icon"
+              src="assets/icons/calendar-icon.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <span>Lorem ipsum dolor sit amet.</span>
           </div>
-        </article>
 
-        <article class="relative h-[378px] min-w-[284px] overflow-hidden rounded-[8px] bg-[#BDBDBD]">
-          <img
-            src="assets/images/placeholder-image.svg"
-            alt="Imagen destacada"
-            class="h-full w-full object-cover"
-          />
+          <h3 class="article-title">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.
+          </h3>
 
-          <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent px-[16px] pb-[18px] pt-[120px] text-white">
-            <h3 class="text-[30px] font-bold leading-[38px] text-white">
-              Lorem ipsum
-            </h3>
-
-            <p class="mt-[8px] text-[16px] font-normal leading-[24px] text-white">
-              Lorem ipsum dolor sit amet consectetur.
-            </p>
-
-            <a
-              class="mt-[14px] inline-flex items-center gap-[4px] text-[16px] font-bold leading-[24px] text-white"
-              href="#"
-              aria-label="Ver más sobre Lorem ipsum"
-            >
-              <span>Lorem ipsum</span>
-              <img
-                src="assets/icons/download-icon.svg"
-                alt=""
-                aria-hidden="true"
-                class="h-[24px] w-[24px] shrink-0"
-              />
-            </a>
-          </div>
+          <p class="article-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
+            Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur,
+            ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
+            Vestibulum auctor ornare leo, non suscipit magna interdum eu.
+          </p>
         </article>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
+
+  <section class="section-frame carousel-section" aria-labelledby="carousel-section-title">
+    <div class="carousel-container">
+      <div>
+        <h2 class="text-block-title" id="carousel-section-title">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.
+        </h2>
+
+        <p class="text-block-copy">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
+          Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur,
+          ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
+          Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh,
+          at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales.
+          Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros,
+          eget tempus orci facilisis id.
+        </p>
+      </div>
+
+      <div class="carousel-viewport">
+        <div class="carousel-track scrollbar-hidden" aria-label="Carrusel de contenidos destacados">
+          <article class="carousel-card">
+            <figure class="image-placeholder" role="img" aria-label="Imagen destacada">
+              <span aria-hidden="true">IMAGE</span>
+            </figure>
+
+            <div class="carousel-overlay">
+              <div class="carousel-content">
+                <h3 class="carousel-title">Lorem ipsum</h3>
+
+                <p class="carousel-copy">
+                  Lorem ipsum dolor sit amet consectetur.
+                </p>
+
+                <a class="carousel-link" href="#" aria-label="Ver más sobre Lorem ipsum">
+                  <span>Lorem ipsum</span>
+                  <img
+                    class="carousel-link-icon"
+                    src="assets/icons/download-icon.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="carousel-card">
+            <figure class="image-placeholder" role="img" aria-label="Imagen destacada">
+              <span aria-hidden="true">IMAGE</span>
+            </figure>
+
+            <div class="carousel-overlay">
+              <div class="carousel-content">
+                <h3 class="carousel-title">Lorem ipsum</h3>
+
+                <p class="carousel-copy">
+                  Lorem ipsum dolor sit amet consectetur.
+                </p>
+
+                <a class="carousel-link" href="#" aria-label="Ver más sobre Lorem ipsum">
+                  <span>Lorem ipsum</span>
+                  <img
+                    class="carousel-link-icon"
+                    src="assets/icons/download-icon.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="carousel-card">
+            <figure class="image-placeholder" role="img" aria-label="Imagen destacada">
+              <span aria-hidden="true">IMAGE</span>
+            </figure>
+
+            <div class="carousel-overlay">
+              <div class="carousel-content">
+                <h3 class="carousel-title">Lorem ipsum</h3>
+
+                <p class="carousel-copy">
+                  Lorem ipsum dolor sit amet consectetur.
+                </p>
+
+                <a class="carousel-link" href="#" aria-label="Ver más sobre Lorem ipsum">
+                  <span>Lorem ipsum</span>
+                  <img
+                    class="carousel-link-icon"
+                    src="assets/icons/download-icon.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="carousel-card">
+            <figure class="image-placeholder" role="img" aria-label="Imagen destacada">
+              <span aria-hidden="true">IMAGE</span>
+            </figure>
+
+            <div class="carousel-overlay">
+              <div class="carousel-content">
+                <h3 class="carousel-title">Lorem ipsum</h3>
+
+                <p class="carousel-copy">
+                  Lorem ipsum dolor sit amet consectetur.
+                </p>
+
+                <a class="carousel-link" href="#" aria-label="Ver más sobre Lorem ipsum">
+                  <span>Lorem ipsum</span>
+                  <img
+                    class="carousel-link-icon"
+                    src="assets/icons/download-icon.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
