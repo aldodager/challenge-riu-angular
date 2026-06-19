@@ -16,20 +16,11 @@
 }
 
 .image-placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   margin: 0;
   overflow: hidden;
   border-radius: var(--radius-md);
   background: var(--color-placeholder);
-  color: var(--color-placeholder-text);
-  font-family: "Figtree", Arial, Helvetica, sans-serif;
-  font-size: 2.25rem;
-  font-weight: 700;
-  line-height: 1;
-  text-transform: uppercase;
 }
 
 .content-image {
@@ -59,7 +50,11 @@
   flex: 0 0 auto;
 }
 
-/* First section */
+.desktop-extra {
+  display: none;
+}
+
+/* Hero */
 
 .hero-section {
   background: var(--color-page-bg);
@@ -131,7 +126,7 @@
   white-space: nowrap;
 }
 
-/* Search and article list */
+/* Search and articles */
 
 .content-section {
   background: var(--color-white);
@@ -235,7 +230,7 @@
   line-height: 1.5;
 }
 
-/* Text and carousel section */
+/* Text and carousel */
 
 .carousel-section {
   background: var(--color-white);
@@ -384,10 +379,6 @@
     max-width: 44rem;
   }
 
-  .hero-card {
-    padding: var(--space-8);
-  }
-
   .hero-image {
     height: 22.5rem;
   }
@@ -398,7 +389,7 @@
     line-height: 1.2084;
   }
 
-  .search-block > div {
+  .search-row {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
