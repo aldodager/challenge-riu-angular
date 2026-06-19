@@ -448,3 +448,139 @@
     box-shadow: 0 0 0 0.0625rem rgb(0 0 0 / 5%);
   }
 }
+
+/* Desktop */
+
+@media (min-width: 90rem) {
+  .mobile-page {
+    max-width: none;
+    width: 100%;
+    background: var(--color-white);
+    box-shadow: none;
+  }
+
+  .section-frame {
+    padding: 6rem 4.3125rem;
+  }
+
+  .hero-section {
+    background: var(--color-page-bg);
+  }
+
+  .hero-card,
+  .content-container,
+  .carousel-container {
+    width: 100%;
+    max-width: 96.375rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .hero-card {
+    min-height: 30rem;
+    flex-direction: row;
+    align-items: stretch;
+    gap: var(--space-8);
+    padding: var(--space-8);
+  }
+
+  .hero-image {
+    width: calc((100% - var(--space-8)) / 2);
+    height: 26rem;
+    flex: 0 0 calc((100% - var(--space-8)) / 2);
+  }
+
+  .hero-content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    min-height: 26rem;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+    line-height: 1.1667;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .hero-action-row {
+    margin-top: auto;
+  }
+
+  .search-title,
+  .text-block-title {
+    font-size: 3rem;
+    line-height: 1.2084;
+  }
+
+  .search-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: var(--space-8);
+  }
+
+  .search-copy {
+    margin: 0;
+    flex: 1 1 auto;
+  }
+
+  .search-field {
+    width: 17.5rem;
+    flex: 0 0 17.5rem;
+  }
+
+  .desktop-extra {
+    display: block;
+  }
+
+  .article-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: var(--space-8);
+    row-gap: var(--space-8);
+  }
+
+  .article-image {
+    height: 17.320625rem;
+  }
+
+  .article-title {
+    min-height: 3.125rem;
+    font-size: 1.5rem;
+    line-height: 1.1667;
+  }
+
+  .article-description {
+    -webkit-line-clamp: 5;
+  }
+
+  .text-block-copy {
+    margin-top: var(--space-6);
+  }
+
+  .carousel-viewport {
+    overflow: visible;
+  }
+
+  .carousel-track {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--space-8);
+    overflow: visible;
+    padding-right: 0;
+  }
+
+  .carousel-card {
+    width: 100%;
+    min-width: 0;
+    height: 30rem;
+  }
+
+  .carousel-overlay {
+    height: 11.875rem;
+  }
+}
