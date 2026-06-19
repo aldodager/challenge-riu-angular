@@ -453,14 +453,15 @@
 
 @media (min-width: 90rem) {
   .mobile-page {
-    max-width: none;
     width: 100%;
+    max-width: none;
     background: var(--color-white);
     box-shadow: none;
   }
 
   .section-frame {
-    padding: 6rem 4.3125rem;
+    padding-block: 6rem;
+    padding-inline: 2rem;
   }
 
   .hero-section {
@@ -511,6 +512,15 @@
     margin-top: auto;
   }
 
+  .content-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search-block {
+    gap: var(--space-12);
+  }
+
   .search-title,
   .text-block-title {
     font-size: 3rem;
@@ -541,7 +551,8 @@
   .article-list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     column-gap: var(--space-8);
-    row-gap: var(--space-8);
+    row-gap: var(--space-12);
+    margin-top: var(--space-12);
   }
 
   .article-image {
@@ -556,6 +567,10 @@
 
   .article-description {
     -webkit-line-clamp: 5;
+  }
+
+  .carousel-container {
+    gap: var(--space-12);
   }
 
   .text-block-copy {
