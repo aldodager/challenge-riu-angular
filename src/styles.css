@@ -1,3 +1,8 @@
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/700.css";
+@import "@fontsource/inter/800.css";
 @import "tailwindcss";
 
 /* Base general del proyecto */
@@ -19,6 +24,8 @@ body {
   min-width: 320px;
   overflow-x: hidden;
   background: #ffffff;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  color: #101010;
 }
 
 img {
@@ -32,5 +39,14 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   appearance: none;
+  display: none;
+}
+
+/* Oculta visualmente el scrollbar horizontal del carrusel sin quitar el scroll */
+.scrollbar-hidden {
+  scrollbar-width: none;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
   display: none;
 }
