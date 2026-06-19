@@ -1,12 +1,103 @@
-<main class="min-h-screen bg-slate-100 px-[24px] py-[32px]">
-  <!-- Prueba rápida para confirmar que Tailwind está funcionando -->
-  <section class="mx-auto max-w-[960px] rounded-[24px] bg-white p-[32px] shadow-sm">
-    <h1 class="text-[2rem] font-semibold leading-[1.1] text-slate-900">
-      Challenge RIU
-    </h1>
+<main class="min-h-screen w-full bg-[#f3f3f3]">
+  <!-- Contenedor mobile: el frame de Figma usa 460px de ancho y padding lateral de 16px -->
+  <div class="mx-auto w-full max-w-[460px] bg-white px-[16px] py-[32px]">
+    <section class="rounded-[4px] bg-white p-[32px] shadow-[0_2px_8px_rgba(0,0,0,0.18)]">
+      <div class="flex h-[198px] w-full items-center justify-center rounded-[4px] bg-[#bfbfbf]">
+        <span class="text-[1.4rem] font-bold tracking-[-0.02em] text-[#a8a8a8]">
+          IMAGE
+        </span>
+      </div>
 
-    <p class="mt-[1em] text-[1rem] leading-[1.5] text-slate-600">
-      Angular y Tailwind están listos para empezar la maquetación.
-    </p>
-  </section>
+      <div class="mt-[28px] flex items-center gap-[6px] text-[0.75rem] font-bold text-[#1f2430]">
+        <span aria-hidden="true">▣</span>
+        <span>Lorem ipsum dolor sit amet.</span>
+      </div>
+
+      <h1 class="mt-[16px] max-w-[18em] text-[1.45rem] font-extrabold leading-[1.02] tracking-[-0.04em] text-[#151515]">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit
+      </h1>
+
+      <p class="mt-[24px] text-[0.86rem] font-medium leading-[1.42] tracking-[-0.02em] text-[#3d3d3d]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.
+        Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.
+        Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.
+        Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales.
+        Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.
+      </p>
+
+      <div class="mt-[28px] flex justify-end">
+        <button class="rounded-[4px] bg-[#e9002d] px-[14px] py-[10px] text-[0.76rem] font-extrabold leading-none text-white">
+          Lorem ipsum.
+        </button>
+      </div>
+    </section>
+
+    <section class="mt-[64px]">
+      <h2 class="text-[1.65rem] font-extrabold leading-[1.05] tracking-[-0.04em] text-[#101010]">
+        Lorem ipsum dolor sit
+      </h2>
+
+      <p class="mt-[24px] text-[0.9rem] font-medium text-[#252525]">
+        Lorem ipsum dolor sit
+      </p>
+
+      <label class="sr-only" for="search">Buscar contenido</label>
+      <div class="mt-[14px] flex h-[32px] items-center rounded-[6px] bg-[#f4f4f6] px-[14px]">
+        <span class="text-[0.85rem] text-[#17234c]" aria-hidden="true">⌕</span>
+        <input
+          id="search"
+          class="h-full w-full bg-transparent pl-[8px] text-[0.875rem] outline-none"
+          type="search"
+          aria-label="Buscar contenido"
+        />
+      </div>
+    </section>
+
+    <section class="mt-[48px] space-y-[40px]">
+      <!-- Listado mobile: se repite el mismo patrón visual del diseño -->
+      <article>
+        <div class="flex h-[232px] w-full items-center justify-center rounded-[4px] bg-[#bfbfbf]">
+          <span class="text-[1.5rem] font-bold text-[#a8a8a8]">IMAGE</span>
+        </div>
+
+        <div class="mt-[14px] flex items-center gap-[6px] text-[0.75rem] font-bold text-[#1f2430]">
+          <span aria-hidden="true">▣</span>
+          <span>Lorem ipsum dolor sit amet.</span>
+        </div>
+
+        <h3 class="mt-[10px] text-[1.35rem] font-extrabold leading-[1.02] tracking-[-0.04em] text-[#101010]">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.
+        </h3>
+
+        <p class="mt-[16px] text-[0.86rem] font-medium leading-[1.38] tracking-[-0.02em] text-[#333333]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
+          Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur,
+          ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
+          Vestibulum auctor ornare leo, non suscipit magna interdum eu.
+        </p>
+      </article>
+
+      <article>
+        <div class="flex h-[232px] w-full items-center justify-center rounded-[4px] bg-[#bfbfbf]">
+          <span class="text-[1.5rem] font-bold text-[#a8a8a8]">IMAGE</span>
+        </div>
+
+        <div class="mt-[14px] flex items-center gap-[6px] text-[0.75rem] font-bold text-[#1f2430]">
+          <span aria-hidden="true">▣</span>
+          <span>Lorem ipsum dolor sit amet.</span>
+        </div>
+
+        <h3 class="mt-[10px] text-[1.35rem] font-extrabold leading-[1.02] tracking-[-0.04em] text-[#101010]">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.
+        </h3>
+
+        <p class="mt-[16px] text-[0.86rem] font-medium leading-[1.38] tracking-[-0.02em] text-[#333333]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
+          Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur,
+          ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
+          Vestibulum auctor ornare leo, non suscipit magna interdum eu.
+        </p>
+      </article>
+    </section>
+  </div>
 </main>
