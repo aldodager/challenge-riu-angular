@@ -2,11 +2,13 @@
   <!-- Contenedor mobile: el frame de Figma usa 460px de ancho y padding lateral de 16px -->
   <div class="mx-auto w-full max-w-[460px] bg-white px-[16px] py-[32px]">
     <section class="rounded-[4px] bg-white p-[32px] shadow-[0_2px_8px_rgba(0,0,0,0.18)]">
-      <div class="flex h-[198px] w-full items-center justify-center rounded-[4px] bg-[#bfbfbf]">
-        <span class="text-[1.4rem] font-bold tracking-[-0.02em] text-[#a8a8a8]">
-          IMAGE
-        </span>
-      </div>
+      <figure class="h-[198px] w-full overflow-hidden rounded-[4px] bg-[#bfbfbf]">
+        <img
+          src="assets/images/placeholder-image.svg"
+          alt="Imagen principal del contenido"
+          class="h-full w-full object-cover"
+        />
+      </figure>
 
       <div class="mt-[28px] flex items-center gap-[6px] text-[0.75rem] font-bold text-[#1f2430]">
         <span aria-hidden="true">▣</span>
@@ -26,7 +28,10 @@
       </p>
 
       <div class="mt-[28px] flex justify-end">
-        <button class="rounded-[4px] bg-[#e9002d] px-[14px] py-[10px] text-[0.76rem] font-extrabold leading-none text-white">
+        <button
+          class="rounded-[4px] bg-[#e9002d] px-[14px] py-[10px] text-[0.76rem] font-extrabold leading-none text-white"
+          type="button"
+        >
           Lorem ipsum.
         </button>
       </div>
@@ -56,9 +61,13 @@
     <section class="mt-[48px] space-y-[40px]">
       <!-- Listado mobile: se repite el mismo patrón visual del diseño -->
       <article>
-        <div class="flex h-[232px] w-full items-center justify-center rounded-[4px] bg-[#bfbfbf]">
-          <span class="text-[1.5rem] font-bold text-[#a8a8a8]">IMAGE</span>
-        </div>
+        <figure class="h-[232px] w-full overflow-hidden rounded-[4px] bg-[#bfbfbf]">
+          <img
+            src="assets/images/placeholder-image.svg"
+            alt="Imagen relacionada al artículo"
+            class="h-full w-full object-cover"
+          />
+        </figure>
 
         <div class="mt-[14px] flex items-center gap-[6px] text-[0.75rem] font-bold text-[#1f2430]">
           <span aria-hidden="true">▣</span>
@@ -78,9 +87,13 @@
       </article>
 
       <article>
-        <div class="flex h-[232px] w-full items-center justify-center rounded-[4px] bg-[#bfbfbf]">
-          <span class="text-[1.5rem] font-bold text-[#a8a8a8]">IMAGE</span>
-        </div>
+        <figure class="h-[232px] w-full overflow-hidden rounded-[4px] bg-[#bfbfbf]">
+          <img
+            src="assets/images/placeholder-image.svg"
+            alt="Imagen relacionada al artículo"
+            class="h-full w-full object-cover"
+          />
+        </figure>
 
         <div class="mt-[14px] flex items-center gap-[6px] text-[0.75rem] font-bold text-[#1f2430]">
           <span aria-hidden="true">▣</span>
