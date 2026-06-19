@@ -1,7 +1,7 @@
-<main class="min-h-screen w-full bg-[#f3f3f3]">
-  <!-- Contenedor mobile: el frame de Figma usa 460px de ancho y padding lateral de 16px -->
-  <div class="mx-auto w-full max-w-[460px] bg-white px-[16px] py-[32px]">
-    <section class="rounded-[4px] bg-white p-[32px] shadow-[0_2px_8px_rgba(0,0,0,0.18)]">
+<main class="min-h-screen w-full overflow-x-hidden bg-[#f3f3f3]">
+  <!-- Contenedor mobile: el frame de Figma usa 460px de ancho con padding lateral de 16px -->
+  <div class="mx-auto w-full max-w-[460px] overflow-hidden bg-white px-[16px] py-[32px]">
+    <section class="w-full rounded-[4px] bg-white p-[32px] shadow-[0_2px_8px_rgba(0,0,0,0.18)]">
       <figure class="h-[198px] w-full overflow-hidden rounded-[4px] bg-[#bfbfbf]">
         <img
           src="assets/images/placeholder-image.svg"
@@ -15,7 +15,7 @@
         <span>Lorem ipsum dolor sit amet.</span>
       </div>
 
-      <h1 class="mt-[16px] max-w-[18em] text-[1.45rem] font-extrabold leading-[1.02] tracking-[-0.04em] text-[#151515]">
+      <h1 class="mt-[16px] text-[1.45rem] font-extrabold leading-[1.02] tracking-[-0.04em] text-[#151515]">
         Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit
       </h1>
 
@@ -47,11 +47,11 @@
       </p>
 
       <label class="sr-only" for="search">Buscar contenido</label>
-      <div class="mt-[14px] flex h-[32px] items-center rounded-[6px] bg-[#f4f4f6] px-[14px]">
+      <div class="mt-[14px] flex h-[32px] w-full items-center rounded-[6px] bg-[#f4f4f6] px-[14px]">
         <span class="text-[0.85rem] text-[#17234c]" aria-hidden="true">⌕</span>
         <input
           id="search"
-          class="h-full w-full bg-transparent pl-[8px] text-[0.875rem] outline-none"
+          class="h-full w-full min-w-0 bg-transparent pl-[8px] text-[0.875rem] outline-none"
           type="search"
           aria-label="Buscar contenido"
         />
@@ -59,7 +59,7 @@
     </section>
 
     <section class="mt-[48px] space-y-[40px]">
-      <!-- Listado mobile: se repite el mismo patrón visual del diseño -->
+      <!-- Listado mobile: cada bloque queda listo para recibir contenido dinámico -->
       <article>
         <figure class="h-[232px] w-full overflow-hidden rounded-[4px] bg-[#bfbfbf]">
           <img
